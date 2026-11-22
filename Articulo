@@ -1,0 +1,35 @@
+[12:34, 22/11/2026] Daniela: Requerimientos de Software
+[12:50, 22/11/2026] Daniela: # Estructura Base del Artículo - STEM APP
+
+* *Título:* Desarrollo de la aplicación móvil STEM APP para el fortalecimiento del aprendizaje interactivo sin conexión en estudiantes de nivel medio superior y superior.
+* *Autores:* Daniela Alexa Sierra Mex, Fidel Antonio Huex Colli, Abner Alberto Rodriguez Ku, Cristian Alejandro Poot Ix (Instituto Tecnológico de Conkal - TecNM).
+* *Resumen (Abstract):* El presente trabajo describe el diseño, desarrollo y validación de *STEM APP, una aplicación móvil multiplataforma orientada a estudiantes de nivel medio superior y superior para reforzar conocimientos mediante retos interactivos. Ante el rezago académico en áreas como matemáticas e inglés y las limitaciones de conectividad en zonas semiurbanas, se desarrolló una herramienta bajo una metodología ágil de prototipado utilizando JavaScript, React Native, Expo Go y almacenamiento local mediante SQLite para operar al 100% sin conexión a internet. La aplicación integra cuatro módulos: Matemáticas, Inglés, Detective Anti-Phishing y un simulador en 3D de Brazo Robótico (Beta). La evaluación de usabilidad realizada mediante una encuesta estructurada (escala Likert / SUS) con una muestra de *[  ] estudiantes del Instituto Tecnológico de Conkal y nivel preparatoria,  arrojó un [X]% de aprobación en facilidad de navegación y demostró la viabilidad de la arquitectura offline en dispositivos Android.
+* *Palabras clave:* Aplicación móvil, educación STEM, aprendizaje interactivo, React Native, funcionamiento offline, simulador 3D, SQLite.
+
+## 1. Introducción
+Se aborda la necesidad de ofrecer una alternativa digital accesible y dinámica que permita a los estudiantes de bachillerato y nivel superior reforzar sus conocimientos fuera del aula tradicional, superando las dificultades frecuentes en áreas como matemáticas e inglés. Asimismo, se justifica el desarrollo de una arquitectura completamente autónoma (offline) para atender la brecha de conectividad en entornos escolares y comunidades semiurbanas, fomentando el interés en disciplinas STEM (Ciencia, Tecnología, Ingeniería y Matemáticas) sin depender de datos móviles o redes Wi-Fi.
+
+## 2. Metodología
+El desarrollo se rigió bajo una *metodología ágil de prototipado evolutivo* estructurada en cinco fases:
+1. *Identificación de la problemática:* Diagnóstico de las dificultades académicas en matemáticas e inglés en estudiantes de nuevo ingreso y preparatoria.
+2. *Planeación y diseño instruccional:* Definición de cuatro módulos educativos interactivos (Matemáticas, Inglés, Detective Anti-Phishing y Brazo Robótico).
+3. *Diseño de interfaz (UI/UX):* Prototipado de una interfaz en tema oscuro de alto contraste con tarjetas de colores distintivos para facilitar la navegación táctil.
+4. *Codificación e integración:* Implementación en JavaScript mediante Visual Studio Code, el framework *React Native* y *Expo Go, gestionando la persistencia local con **SQLite* y el renderizado gráfico para el módulo 3D.
+5. *Validación y pruebas:* Evaluación técnica de rendimiento y pruebas de usabilidad con usuarios reales mediante instrumentos cuantitativos.
+
+## 3. Desarrollo
+La arquitectura de *STEM APP* opera de forma local en el dispositivo:
+* *Autenticación local:* Sistema de registro e inicio de sesión mediante credenciales propias almacenadas directamente en la base de datos local *SQLite* (Usuario/Matrícula y NIP numérico de 4 dígitos), permitiendo el acceso inmediato sin servidores externos.
+* *Módulos educativos:*
+  * *Matemáticas:* Ejercicios interactivos de álgebra, geometría y conceptos clave.
+  * *Inglés:* Cuestionarios de opción múltiple enfocados en vocabulario técnico y gramática.
+  * *Detective Anti-Phishing:* Simulador de escenarios para identificar ciberamenazas y fraudes digitales.
+  * *Brazo Robótico (Beta):* Entorno visual interactivo en 3D enfocado en cinemática y lógica de control.
+
+## 4. Resultados
+(Se completará con las métricas finales de la fase de pruebas)
+* *Pruebas de usabilidad:* Resultados cuantitativos obtenidos de la aplicación del instrumento de evaluación (escala Likert / SUS) a una muestra de [N] estudiantes (bachillerato y Tec de Conkal), midiendo claridad de interfaz, facilidad de navegación y utilidad percibida.
+* *Desempeño técnico:* Medición de tiempos de respuesta en modo offline (apertura de módulos y renderizado del simulador 3D del brazo robótico) y validación de integridad de los cuestionarios y datos locales en SQLite.
+
+## 5. Conclusiones y Trabajo Futuro
+Las pruebas iniciales confirman que *STEM APP* cumple con el objetivo de ofrecer un refuerzo educativo práctico y estable sin requerir conexión a internet, logrando una aceptación positiva tanto en estudiantes como en docentes que la validan como herramienta de apoyo en el aula. Como trabajo futuro se proyecta ampliar los bancos de reactivos en las cuatro áreas, optimizar el rendimiento gráfico del simulador 3D y preparar el empaquetado final para su distribución oficial en tienda de aplicaciones como Google Play y App Store.
