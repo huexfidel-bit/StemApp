@@ -229,10 +229,10 @@ export default function InglesScreen() {
           </TouchableOpacity>
 
           <TouchableOpacity
-            style={[styles.buttonPrimary, styles.buttonSecondary]}
-            onPress={() => router.replace('/home')}
+            style={[styles.buttonPrimary, styles.buttonRetry]}
+            onPress={() => cargarEjerciciosPorTema(selectedTopic)}
           >
-            <Text style={styles.buttonText}>Volver al Menú Principal</Text>
+            <Text style={styles.buttonText}>Intentar de nuevo</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -244,7 +244,9 @@ export default function InglesScreen() {
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
-      <Stack.Screen options={{ title: `Inglés (${indiceActual + 1}/${preguntas.length})`, headerBackVisible: false }} />
+      <Stack.Screen
+        options={{ title: `Inglés (${indiceActual + 1}/${preguntas.length})`, headerBackVisible: false }}
+      />
 
       {/* Barra superior con el nombre del tema */}
       <View style={styles.topBarRow}>
@@ -306,7 +308,7 @@ export default function InglesScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#121212' },
+  container: { flex: 1, backgroundColor: '#000000' },
   scrollContent: { padding: 20, paddingBottom: 36 },
   centerContainer: {
     flex: 1,
@@ -396,7 +398,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonPrimary: {
-    backgroundColor: '#378b3f',
+    backgroundColor: '#2563EB',
     paddingHorizontal: 24,
     paddingVertical: 14,
     borderRadius: 10,
@@ -404,6 +406,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
   },
+  buttonRetry: { backgroundColor: '#378b3f' },
   buttonSecondary: { backgroundColor: '#378b3f' },
   buttonText: { color: '#FFFFFF', fontWeight: 'bold', fontSize: 15 },
   resultCard: {
