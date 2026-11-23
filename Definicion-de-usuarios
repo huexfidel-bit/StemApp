@@ -1,0 +1,19 @@
+# Especificación de Requerimientos de Software (ERS) - STEM APP
+
+## 1. Propósito del Sistema
+La aplicación móvil *STEM APP* (desarrollada en el Instituto Tecnológico de Conkal - TecNM) tiene como objetivo fortalecer el aprendizaje y fomentar el interés en áreas STEM en estudiantes de nivel medio superior y superior, mediante módulos interactivos, cuestionarios y simuladores accesibles sin conexión a internet.
+
+## 2. Requerimientos Funcionales (RF)
+* *RF-01 Registro e inicio de sesión local:* El sistema permitirá al usuario registrarse y autenticar su acceso ingresando un *Usuario / Matrícula* y un *NIP de Acceso* numérico de 4 dígitos.
+* *RF-02 Selección de módulos educativos:* El sistema presentará un menú principal con acceso directo a cuatro áreas temáticas: *Matemáticas, **Inglés, **Detective Anti-Phishing* y *Brazo Robótico (Beta)*.
+* *RF-03 Resolución de cuestionarios interactivos:* En los módulos de Matemáticas e Inglés, el usuario podrá responder ejercicios de opción múltiple (álgebra, geometría, vocabulario técnico y gramática) con retroalimentación inmediata.
+* *RF-04 Simulación de ciberseguridad (Anti-Phishing):* El sistema permitirá al usuario analizar escenarios interactivos para identificar intentos de fraude y ciberamenazas.
+* *RF-05 Simulación 3D de Brazo Robótico:* El sistema integrará un entorno visual en 3D donde el usuario podrá interactuar con principios de lógica de control.
+* *RF-06 Persistencia local de datos:* El sistema almacenará de forma local las credenciales y el avance de las actividades utilizando una base de datos *SQLite*.
+
+## 3. Requerimientos No Funcionales (RNF)
+* *RNF-01 Operación Offline (Disponibilidad):* La aplicación debe operar al 100% de su funcionalidad sin requerir conexión activa a internet gracias al almacenamiento local en SQLite.
+* *RNF-02 Compatibilidad y Tecnología:* Desarrollada en JavaScript con el framework *React Native* y *Expo Go, compatible con dispositivos móviles con **Android 10 (API 29) o superior*.
+* *RNF-03 Rendimiento:* La transición entre el menú principal y cualquiera de los cuatro módulos educativos (incluyendo la carga de los simuladores) no debe superar los *2 segundos* en dispositivos de gama media.
+* *RNF-04 Usabilidad:* La interfaz utilizará tarjetas de colores distintivos sobre un tema oscuro de alto contraste, permitiendo al usuario acceder a cualquier actividad en un máximo de *2 toques* desde el inicio de sesión.
+* *RNF-05 Seguridad:* Las credenciales de acceso (Usuario/Matrícula y NIP) se resguardarán de forma aislada dentro del almacenamiento local protegido de la aplicación en el dispositivo.
